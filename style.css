@@ -129,7 +129,23 @@ nav .container {
 }
 
 /* ===== About ===== */
-#about h2 {
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.about-body h2 {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -139,8 +155,19 @@ nav .container {
 .about-text {
   font-size: 1rem;
   color: var(--text-secondary);
-  max-width: 540px;
   line-height: 1.75;
+}
+
+@media (max-width: 640px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-photo {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
 }
 
 /* ===== Apps ===== */
