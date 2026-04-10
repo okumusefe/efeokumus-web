@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Efe Okumuş — iOS Developer</title>
+  <meta name="description" content="Efe Okumuş is an indie iOS app developer based in Turkey. I build minimal iOS apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <span class="nav-logo">Efe Okumuş</span>
+      <ul class="nav-links">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <span class="hero-tag">Indie Developer · Turkey</span>
+      <h1>Efe Okumuş</h1>
+      <p>I build minimal iOS apps.</p>
+    </div>
+  </section>
+
+  <!-- Apps -->
+  <section id="apps">
+    <div class="container">
+      <h2>Apps</h2>
+      <div class="apps-grid">
+
+        <!-- Stillwork -->
+        <div class="app-card">
+          <img class="app-icon-img" src="stillwork-icon.png" alt="Stillwork app icon" />
+          <h3>Stillwork: Focus Timer</h3>
+          <p>A clean Pomodoro timer to help you stay focused and get things done — no distractions, just work.</p>
+          <a class="app-store-badge" href="#" target="_blank" rel="noopener noreferrer">
+            <!-- Apple logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 814 1000" fill="currentColor">
+              <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-37.3-155.5-127.7C46.7 790.7 0 663 0 541.8c0-207.6 135.4-317.3 268.1-317.3 88.1 0 161.3 57.9 215.7 57.9 52.4 0 135.7-61.5 236.4-61.5zM570.6 107.4C618.1 52.3 650.9 0 650.9 0c0 0-108.1 46.9-163.1 120.4-48.6 65.8-86.1 148.5-86.1 229.8 0 2.1 0 4.1.1 6.1 3.4.1 6.9.2 10.5.2 83.9 0 163.4-55.2 158.3-249.1z"/>
+            </svg>
+            Download on the App Store
+          </a>
+          <a class="privacy-link" href="stillwork-privacy.html">Privacy Policy</a>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="app-card placeholder">
+          <div class="app-icon-placeholder"></div>
+          <h3>More coming soon</h3>
+          <p>New apps in the works. Stay tuned.</p>
+          <span class="coming-soon-label">— in progress</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <p>Questions, feedback, or just want to say hi — my inbox is open.</p>
+      <a class="contact-email" href="mailto:is.efeokumus@gmail.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        is.efeokumus@gmail.com
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Efe Okumuş. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
