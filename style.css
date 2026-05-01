@@ -269,6 +269,17 @@ nav .container {
   height: 16px;
 }
 
+.app-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.app-links-sep {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 .app-card .privacy-link {
   font-size: 0.78rem;
   color: var(--text-muted);
