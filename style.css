@@ -438,6 +438,37 @@ footer a:hover {
   margin-bottom: 4px;
 }
 
+/* ===== FAQ ===== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 24px 0 40px;
+}
+
+.faq-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.faq-question {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.faq-item p:not(.faq-question) {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 600px) {
   section {
